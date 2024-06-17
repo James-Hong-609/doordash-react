@@ -1,13 +1,21 @@
-import { useState } from 'react'
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Navbar from './components/Navbar.jsx'
 import './App.css'
+import Sidebar from './components/Sidebar.jsx';
+import Mainside from './components/Mainside.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    
+     {/* <Routes>
+        <Route path='/miami' element={<Miami />} />
+     </Routes> */}
+     <div>
+       <Navbar />
+       <Sidebar />
+       <Mainside />
+     </div>
     </>
   )
 }
